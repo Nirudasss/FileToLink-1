@@ -29,7 +29,7 @@ class Var:
     API_HASH: str = os.getenv('API_HASH', '527e6297989f4e7cda5091f5bf41d0e4')
 
     # Bot token
-    BOT_TOKEN: str = os.getenv('BOT_TOKEN', '')
+    BOT_TOKEN: str = os.getenv('BOT_TOKEN', '7239597095:AAEISDjMXXH5kE-bx9R6sUnms4toZWQuTEw')
 
     # Bot name
     NAME: str = os.getenv('NAME', 'Radhaji_FileStream_Bot')
@@ -59,7 +59,7 @@ class Var:
 
     # Fully Qualified Domain Name
     if ON_HEROKU:
-        FQDN: str = os.getenv('FQDN', '') or f"{APP_NAME}.herokuapp.com"
+        FQDN: str = os.getenv('FQDN', 'reluctant-jania-priyte-ba10571a.koyeb.app') or f"{APP_NAME}.herokuapp.com"
     else:
         FQDN: str = os.getenv('FQDN', BIND_ADDRESS)
 
