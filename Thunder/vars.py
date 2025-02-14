@@ -25,14 +25,14 @@ class Var:
     Configuration variables for the bot.
     """
     # Telegram API credentials
-    API_ID: int = int(os.getenv('API_ID', ''))
-    API_HASH: str = os.getenv('API_HASH', '')
+    API_ID: int = int(os.getenv('API_ID', '10660564'))
+    API_HASH: str = os.getenv('API_HASH', '527e6297989f4e7cda5091f5bf41d0e4')
 
     # Bot token
     BOT_TOKEN: str = os.getenv('BOT_TOKEN', '')
 
     # Bot name
-    NAME: str = os.getenv('NAME', 'ThunderF2L')
+    NAME: str = os.getenv('NAME', 'Radhaji_FileStream_Bot')
 
     # Sleep threshold
     SLEEP_THRESHOLD: int = int(os.getenv('SLEEP_THRESHOLD', '60'))
@@ -41,7 +41,7 @@ class Var:
     WORKERS: int = int(os.getenv('WORKERS', '8'))
 
     # Channel ID where files are stored
-    BIN_CHANNEL: int = int(os.getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL: int = int(os.getenv('BIN_CHANNEL', '-1002416466147'))
 
     # Web server configurations
     PORT: int = int(os.getenv('PORT', '460'))
@@ -50,8 +50,8 @@ class Var:
     NO_PORT: bool = str2bool(os.getenv('NO_PORT', 'True'))
 
     # Owner details
-    OWNER_ID: Set[int] = set(int(x) for x in os.getenv('OWNER_ID', '').split() if x.isdigit())
-    OWNER_USERNAME: str = os.getenv('OWNER_USERNAME', '')
+    OWNER_ID: Set[int] = set(int(x) for x in os.getenv('OWNER_ID', '7737048829').split() if x.isdigit())
+    OWNER_USERNAME: str = os.getenv('OWNER_USERNAME', 'PRESIDENTIND7')
 
     # Application configurations
     APP_NAME: str = os.getenv('APP_NAME', '')
@@ -68,10 +68,10 @@ class Var:
     URL: str = f"https://{FQDN}/" if HAS_SSL else f"http://{FQDN}/"
 
     # Database URL
-    DATABASE_URL: str = os.getenv('DATABASE_URL', '')
+    DATABASE_URL: str = os.getenv('DATABASE_URL', 'mongodb+srv://Koi:Lok@cluster0.bt8r7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
     # Updates channel
-    UPDATES_CHANNEL: Optional[str] = os.getenv('UPDATES_CHANNEL')
+    UPDATES_CHANNEL: Optional[str] = os.getenv('-1002386857422')
 
     # Banned channels
     BANNED_CHANNELS: Set[int] = set(
