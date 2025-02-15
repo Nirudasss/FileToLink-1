@@ -44,7 +44,7 @@ class Var:
     BIN_CHANNEL: int = int(os.getenv('BIN_CHANNEL', '-1002416466147'))
 
     # Web server configurations
-    PORT: int = int(os.getenv('PORT', '460'))
+    PORT: int = int(os.getenv('PORT', '8080'))
     BIND_ADDRESS: str = os.getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0')
     PING_INTERVAL: int = int(os.getenv('PING_INTERVAL', '1200'))  # 20 minutes
     NO_PORT: bool = str2bool(os.getenv('NO_PORT', 'True'))
