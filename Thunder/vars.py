@@ -59,7 +59,7 @@ class Var:
 
     # Fully Qualified Domain Name
     if ON_HEROKU:
-        FQDN: str = os.getenv('FQDN', 'reluctant-jania-priyte-ba10571a.koyeb.app') or f"{APP_NAME}.herokuapp.com"
+        FQDN: str = os.getenv('FQDN', '') or f"{APP_NAME}.herokuapp.com"
     else:
         FQDN: str = os.getenv('FQDN', BIND_ADDRESS)
 
