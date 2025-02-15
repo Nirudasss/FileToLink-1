@@ -47,7 +47,7 @@ class Var:
     PORT: int = int(os.getenv('PORT', '460'))
     BIND_ADDRESS: str = os.getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0')
     PING_INTERVAL: int = int(os.getenv('PING_INTERVAL', '1200'))  # 20 minutes
-    NO_PORT: bool = str2bool(os.getenv('NO_PORT', 'False'))
+    NO_PORT: bool = str2bool(os.getenv('NO_PORT', 'True'))
 
     # Owner details
     OWNER_ID: Set[int] = set(int(x) for x in os.getenv('OWNER_ID', '7737048829').split() if x.isdigit())
@@ -71,7 +71,7 @@ class Var:
     DATABASE_URL: str = os.getenv('DATABASE_URL', 'mongodb+srv://Koi:Lok@cluster0.bt8r7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
     # Updates channel
-    UPDATES_CHANNEL: Optional[str] = os.getenv('https://t.me/Radha_Rani_Backup')
+    UPDATES_CHANNEL: Optional[str] = os.getenv('Radha_Rani_Backup')
 
     # Banned channels
     BANNED_CHANNELS: Set[int] = set(
