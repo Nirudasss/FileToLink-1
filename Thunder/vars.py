@@ -71,7 +71,7 @@ class Var:
     DATABASE_URL: str = os.getenv('DATABASE_URL', 'mongodb+srv://Koi:Lok@cluster0.bt8r7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
     # Updates channel
-    UPDATES_CHANNEL: Optional[str] = os.getenv('Radha_Rani_Backup')
+    UPDATES_CHANNEL: Optional[str] = os.getenv('-1002386857422')
 
     # Banned channels
     BANNED_CHANNELS: Set[int] = set(
