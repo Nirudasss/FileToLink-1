@@ -77,3 +77,6 @@ class Var:
     BANNED_CHANNELS: Set[int] = set(
         int(x) for x in os.getenv('BANNED_CHANNELS', '-1002374738987').split() if x.lstrip('-').isdigit()
     )
+
+    # Multi-client support
+    MULTI_CLIENT: bool = False
